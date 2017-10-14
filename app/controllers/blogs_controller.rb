@@ -26,7 +26,7 @@ class BlogsController < ApplicationController
     @blog = Blog.new(blogs_params)
     @blog.user_id = current_user.id
     if @blog.save
-      redirect_to blogs_path, notice: "ブログを作成しました！"
+      redirect_to blogs_path, notice: "トピックを作成しました！"
       NoticeMailer.sendmail_blog(@blog).deliver
     else
       render 'new'
@@ -47,7 +47,7 @@ class BlogsController < ApplicationController
   #  @blog = Blog.find(params[:id])
 
     if @blog.update(blogs_params)
-      redirect_to blogs_path, notice: "ブログを更新しました！"
+      redirect_to blogs_path, notice: "トピックを更新しました！"
     else
       render 'edit'
     end
@@ -57,7 +57,7 @@ class BlogsController < ApplicationController
   #  edit, update, destroyで共通コード
   #  @blog = Blog.find(params[:id])
     @blog.destroy
-    redirect_to blogs_path, notice: "ブログを削除しました！"
+    redirect_to blogs_path, notice: "トピックを削除しました！"
   end
 
   def confirm

@@ -1,8 +1,8 @@
 ja:
   activerecord:
     models:
-      blog: "ブログ"
-      contact: "連絡する"
+      blog: "トピック"
+      contact: "コメントする"
       user: "ユーザー"
     attributes:
       blog:
