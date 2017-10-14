@@ -2,7 +2,7 @@
 lock '3.6.0'
 
 set :application, 'achieve'
-set :repo_url, 'https://github.com/yatchan/like_facebook'
+set :repo_url, 'https://github.com/yatchan/like_facebook2'
 
 # deployするブランチ。デフォルトはmasterなのでなくても可。
 set :branch, ENV['BRANCH'] || 'master'
