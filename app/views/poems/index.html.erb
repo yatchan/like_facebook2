@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Poems</h1>
+
+<div align="center"> 
+    <% @poems.each do |poem| %>
+        <%= poem.title %>   
+        <%= poem.auther %><br>
+        <%= poem.content %>   
+        <%= link_to "詳細", poem_path(poem.id) %>
+        <br><br><br>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+<br>
+
+
