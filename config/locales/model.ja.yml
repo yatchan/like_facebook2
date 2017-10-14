@@ -3,7 +3,7 @@ ja:
     models:
       blog: "トピック"
       contact: "コメントする"
-      user: "ユーザー"
+      user: "友達"
     attributes:
       blog:
         title: "タイトル"
