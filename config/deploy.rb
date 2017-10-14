@@ -8,7 +8,7 @@ set :repo_url, 'https://github.com/yatchan/like_facebook2'
 set :branch, ENV['BRANCH'] || 'master'
 
 # deploy先のディレクトリ。
-set :deploy_to, '/var/www/achieve'
+set :deploy_to, '/var/www/facebook'
 
 # シンボリックリンクをはるフォルダ・ファイル
 set :linked_files, %w{.env config/secrets.yml}
