@@ -5,7 +5,11 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :confirmable, :omniauthable
   mount_uploader :avatar, AvatarUploader
   has_many :blogs, dependent: :destroy
+
   has_many :conversations, dependent: :destroy
+  has_many :notifications, dependent: :destroy
+  has_many :contacts, dependent: :destroy
+
   has_many :comments, dependent: :destroy
   has_many :messages, dependent: :nullify
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy
