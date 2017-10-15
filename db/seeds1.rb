@@ -9,18 +9,4 @@
     password: password,
     uid: uid
   )
-
-  topic = Topic.new(
-    content: 'トピック',
-  user_id: user.id)
-
-  10.times do
-    topic.comments.build(
-      content: 'コメント',
-    user_id: user.id)
-  end
-
-  topic.save
-
 end
-
